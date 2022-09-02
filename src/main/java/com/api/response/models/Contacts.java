@@ -1,44 +1,47 @@
 package com.api.response.models;
 
-import java.util.List;
-
 public class Contacts {
 
     private String nome;
     private String telefone;
-    private String operadora;
+    private String email;
 
-    public Contacts(String nome, String telefone, String operadora) {
-        super();
+    public Contacts(String nome, String telefone, String email) {
         this.nome = nome;
         this.telefone = telefone;
-        this.operadora = operadora;
-    }
-    public Contacts(){
-
+        this.email = email;
     }
 
     public String getNome() {
         return nome;
     }
 
-    public String getTelefone() {
-        return telefone;
-    }
-
-    public String getOperadora() {
-        return operadora;
-    }
-
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getTelefone() {
+        return telefone;
     }
 
     public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
 
-    public void setOperadora(String operadora) {
-        this.operadora = operadora;
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    @Override
+    public String toString() {
+        return "Contacts{" +
+                "nome='" + nome + '\'' +
+                ", telefone='" + telefone + '\'' +
+                ", email='" + email + '\'' +
+                '}';
     }
 }
