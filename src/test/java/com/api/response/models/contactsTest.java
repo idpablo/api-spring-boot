@@ -12,10 +12,6 @@ public class contactsTest {
             Contacts c2 = new Contacts("Contato2", "62 9999 9999", "contato2@teste.com");
             Contacts c3 = new Contacts("Contato3", "63 9999 9999", "contato3@teste.com");
 
-            arrayList.add(c1);
-            arrayList.add(c2);
-            arrayList.add(c3);
-
             System.out.println(arrayList);
 
             System.out.println("\nImplementanto testes de Array");

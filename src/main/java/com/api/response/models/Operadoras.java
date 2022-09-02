@@ -1,12 +1,12 @@
 package com.api.response.models;
 
-public class Operadoras{
+public  class Operadoras{
 
-    private String nomeOperadora;
-    private String cod;
+    protected  String nomeOperadora;
+    protected String cod;
 
-    public Operadoras(String nome, String cod) {
-        this.nomeOperadora = nome;
+    public Operadoras(String nomeOperadora, String cod) {
+        this.nomeOperadora = nomeOperadora;
         this.cod = cod;
     }
 
@@ -14,7 +14,7 @@ public class Operadoras{
         return nomeOperadora;
     }
 
-    public void setNome(String nomeOperadora) {
+    public void setNomeOperadora(String nomeOperadora) {
         this.nomeOperadora = nomeOperadora;
     }
 
@@ -29,7 +29,7 @@ public class Operadoras{
     @Override
     public String toString() {
         return "Operadoras{" +
-                "nome='" + nomeOperadora + '\'' +
+                "nomeOperadora='" + nomeOperadora + '\'' +
                 ", cod='" + cod + '\'' +
                 '}';
     }

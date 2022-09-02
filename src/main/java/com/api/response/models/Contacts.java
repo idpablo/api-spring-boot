@@ -1,7 +1,6 @@
 package com.api.response.models;
 
 public class Contacts{
-
     private String nome;
     private String telefone;
     private String email;
@@ -11,7 +10,6 @@ public class Contacts{
         this.telefone = telefone;
         this.email = email;
     }
-
     public String getNome() {
         return nome;
     }
