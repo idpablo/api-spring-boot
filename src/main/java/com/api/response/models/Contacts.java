@@ -1,6 +1,6 @@
 package com.api.response.models;
 
-public class Contacts {
+public class Contacts{
 
     private String nome;
     private String telefone;

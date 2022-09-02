@@ -20,12 +20,12 @@ public class MyCotroller {
         Contacts c4 = new Contacts("Contato4", "64 9999 9999", "contato4@teste.com");
         Contacts c5 = new Contacts("Contato5", "65 9999 9999", "contato5@teste.com");
 
+
         arrayList.add(c1);
         arrayList.add(c2);
         arrayList.add(c3);
         arrayList.add(c4);
         arrayList.add(c5);
-
         return arrayList.toArray();
     }
 }
