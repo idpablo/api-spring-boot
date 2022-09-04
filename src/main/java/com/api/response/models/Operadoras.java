@@ -2,35 +2,45 @@ package com.api.response.models;
 
 public  class Operadoras{
 
-    protected  String nomeOperadora;
-    protected String cod;
+    protected  String nome;
+    protected String codigo;
+    protected String categoria;
 
-    public Operadoras(String nomeOperadora, String cod) {
-        this.nomeOperadora = nomeOperadora;
-        this.cod = cod;
+    public Operadoras(String nomeOperadora, String codigo, String categoria) {
+        this.nome = nomeOperadora;
+        this.codigo = codigo;
+        this.categoria = categoria;
     }
 
-    public String getNomeOperadora() {
-        return nomeOperadora;
+    public String getNome() {
+        return nome;
     }
 
-    public void setNomeOperadora(String nomeOperadora) {
-        this.nomeOperadora = nomeOperadora;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public String getCod() {
-        return cod;
+    public String getCodigo() {
+        return codigo;
     }
 
-    public void setCod(String cod) {
-        this.cod = cod;
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
     }
 
     @Override
     public String toString() {
         return "Operadoras{" +
-                "nomeOperadora='" + nomeOperadora + '\'' +
-                ", cod='" + cod + '\'' +
+                "nomeOperadora='" + nome + '\'' +
+                ", cod='" + codigo + '\'' +
                 '}';
     }
 }

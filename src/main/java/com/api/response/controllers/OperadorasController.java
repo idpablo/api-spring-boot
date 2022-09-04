@@ -13,11 +13,11 @@ public class OperadorasController {
     public Object[] operadoras(){
         ArrayList arrayList = new ArrayList<>();
 
-        Operadoras operadora1 = new Operadoras("Oi", "15");
-        Operadoras operadora2 = new Operadoras("Tim", "41");
-        Operadoras operadora3 = new Operadoras("Claro", "21");
-        Operadoras operadora4 = new Operadoras("Embratel", "21");
-        Operadoras operadora5 = new Operadoras("Sercomtel", "43");
+        Operadoras operadora1 = new Operadoras("Oi", "15", "Celular");
+        Operadoras operadora2 = new Operadoras("Tim", "41", "Celular");
+        Operadoras operadora3 = new Operadoras("Claro", "21", "Celular");
+        Operadoras operadora4 = new Operadoras("Embratel", "21", "Celular");
+        Operadoras operadora5 = new Operadoras("Sercomtel", "43", "Telefone");
 
         arrayList.add(operadora1);
         arrayList.add(operadora2);

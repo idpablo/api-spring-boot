@@ -19,11 +19,11 @@ public class operadorasTest {
         Contacts c4 = new Contacts("Contato4", "64 9999 9999", "contato4@teste.com");
         Contacts c5 = new Contacts("Contato5", "65 9999 9999", "contato5@teste.com");
 
-        Operadoras operadora1 = new Operadoras("Oi", "15");
-        Operadoras operadora2 = new Operadoras("Tim", "41");
-        Operadoras operadora3 = new Operadoras("Claro", "21");
-        Operadoras operadora4 = new Operadoras("Embratel", "21");
-        Operadoras operadora5 = new Operadoras("Sercomtel", "43");
+        Operadoras operadora1 = new Operadoras("Oi", "15", "Celular");
+        Operadoras operadora2 = new Operadoras("Tim", "41", "Celular");
+        Operadoras operadora3 = new Operadoras("Claro", "21", "Celular");
+        Operadoras operadora4 = new Operadoras("Embratel", "21", "Celular");
+        Operadoras operadora5 = new Operadoras("Sercomtel", "43", "Celular");
 
         map.put(c1,operadora1);
         map.put(c2,operadora2);
