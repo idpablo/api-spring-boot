@@ -76,15 +76,15 @@ public class ContactService {
         }
     }
 
-    public void updateAddress(Long id, Address address)
-            throws ResourceNotFoundException {
-        Contact contact = findById(id);
-        contact.setAddress1(address.getAddress1());
-        contact.setAddress2(address.getAddress2());
-        contact.setAddress3(address.getAddress3());
-        contact.setPostalCode(address.getPostalCode());
-        contactRepository.save(contact);
-    }
+//    public void updateAddress(Long id, Address address)
+//            throws ResourceNotFoundException {
+//        Contact contact = findById(id);
+//        contact.setAddress1(address.getAddress1());
+//        contact.setAddress2(address.getAddress2());
+//        contact.setAddress3(address.getAddress3());
+//        contact.setPostalCode(address.getPostalCode());
+//        contactRepository.save(contact);
+//    }
 
     public void deleteById(Long id) throws ResourceNotFoundException {
         if (!existsById(id)) {

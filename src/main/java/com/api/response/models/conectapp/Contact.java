@@ -36,6 +36,54 @@ public class Contact implements Serializable {
     @Column(length = 4000)
     private String note;
 
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setAddress1(String address1) {
+        this.address1 = address1;
+    }
+
+    public String getAddress2() {
+        return address2;
+    }
+
+    public void setAddress2(String address2) {
+        this.address2 = address2;
+    }
+
+    public String getAddress3() {
+        return address3;
+    }
+
+    public void setAddress3(String address3) {
+        this.address3 = address3;
+    }
+
+    public String getPostalCode() {
+        return postalCode;
+    }
+
+    public void setPostalCode(String postalCode) {
+        this.postalCode = postalCode;
+    }
+
+    public String getNote() {
+        return note;
+    }
+
+    public void setNote(String note) {
+        this.note = note;
+    }
+
     public void setName(String name) {
     }
 
@@ -56,5 +104,9 @@ public class Contact implements Serializable {
 
     public String getEmail() {
         return null;
+    }
+
+    public String getAddress1() {
+        return address1;
     }
 }
