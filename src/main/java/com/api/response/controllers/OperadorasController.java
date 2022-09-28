@@ -1,31 +1,28 @@
 package com.api.response.controllers;
 
-import com.api.response.models.Operadoras;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.api.response.models.entities.Contacts;
+import com.api.response.models.repository.ContactsRepository;
+import com.api.response.models.entities.Operadoras;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 
 @RestController
+@RequestMapping("/api/agenda")
 public class OperadorasController {
 
-    @GetMapping(path = "/operadoras")
-    public Object[] operadoras(){
-        ArrayList arrayList = new ArrayList<>();
+    @Autowired
+    ContactsRepository contactsRepository;
 
-        Operadoras operadora1 = new Operadoras("Oi", "15", "Celular");
-        Operadoras operadora2 = new Operadoras("Tim", "41", "Celular");
-        Operadoras operadora3 = new Operadoras("Claro", "21", "Celular");
-        Operadoras operadora4 = new Operadoras("Embratel", "21", "Celular");
-        Operadoras operadora5 = new Operadoras("Sercomtel", "43", "Telefone");
+    @PostMapping
+    public @ResponseBody Contacts newContacts(
+                         @RequestParam(name = "nome") String nome,
+                         @RequestParam(name = "telefone") String telefone,
+                         @RequestParam(name = "email") String email){
 
-        arrayList.add(operadora1);
-        arrayList.add(operadora2);
-        arrayList.add(operadora3);
-        arrayList.add(operadora4);
-        arrayList.add(operadora5);
-
-        return arrayList.toArray();
+        Contacts contact = new Contacts(nome, telefone, email);
+        contactsRepository.save(contact);
+        return contact;
     }
-
 }

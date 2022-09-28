@@ -1,5 +1,6 @@
 package com.api.response.models;
 
+import com.api.response.models.entities.Contacts;
 import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 

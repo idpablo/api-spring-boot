@@ -1,8 +1,8 @@
-package com.api.response.models;
+package com.api.response.models.entities;
 
-public  class Operadoras{
+public class Operadoras {
 
-    protected  String nome;
+    protected String nome;
     protected String codigo;
     protected String categoria;
 
