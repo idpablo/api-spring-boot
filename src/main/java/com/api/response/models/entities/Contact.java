@@ -1,19 +1,25 @@
 package com.api.response.models.entities;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotBlank;
 
 @Entity
+@Table(name = "contacts")
 public class Contact {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
+    @NotBlank
     private String nome;
+
+    @NotBlank
+    @Min(value = 9, message = "O número de telefone deve conter no minimo 11 digitos incluindo o DDD!!!")
     private String telefone;
+
+
     private String email;
 
     public Contact() {
@@ -51,7 +57,7 @@ public class Contact {
 
     @Override
     public String toString() {
-        return "Contacts{" +
+        return "Contact{" +
                 "nome='" + nome + '\'' +
                 ", telefone='" + telefone + '\'' +
                 ", email='" + email + '\'' +
